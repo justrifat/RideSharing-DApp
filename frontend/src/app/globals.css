@@ -1,0 +1,23 @@
+@tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+  
+
+@layer components {
+  .form-group {
+    @apply flex justify-between gap-12 items-center  ;
+  }
+  .inField{
+    @apply w-[420px] h-12 bg-orange-50 rounded-xl focus:ring focus:ring-cream-300 px-4;
+  }
+  .inField::placeholder{
+    @apply text-gray-400 text-lg ;
+  }
+  .label{
+    @apply font-medium text-xl text-blue-950;
+  }
+  .button{
+    @apply px-8 py-4 bg-cream-400 rounded-xl flex justify-center items-center text-sm text-blue-950 font-bold  ;
+  }
+}
